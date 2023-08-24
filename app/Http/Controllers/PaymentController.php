@@ -23,7 +23,7 @@ class PaymentController extends Controller
 
     public function pay()
     {
-        \Stripe\Stripe::setApiKey('sk_test_3M749AJJ6re1nfC9t1WYe8Xa');
+        \Stripe\Stripe::setApiKey('YOUR SECRET KEY');
 
         try {
             $jsonStr = file_get_contents('php://input');
